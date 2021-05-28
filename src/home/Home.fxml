@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.Controller">
+
+        <VBox alignment="TOP_CENTER" prefHeight="429.0" prefWidth="256.0" style="-fx-background-color: #05071F;" AnchorPane.bottomAnchor="147.0" AnchorPane.topAnchor="0.0">
+
+                <ImageView fitHeight="73.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+
+                        <Image url="@../images/HILMIONELL.jpg" />
+
+                    <VBox.margin>
+                        <Insets bottom="10.0" top="50.0" />
+                    </VBox.margin></ImageView>
+                <Label text="HILMI ONELL" textFill="#e7e5e5">
+                    <VBox.margin>
+                        <Insets bottom="20.0" />
+                    </VBox.margin>
+                </Label>
+
+                <Button fx:id="btnOrders" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Orders">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+
+                                <Image url="@../images/icons8_Open_Envelope_32px.png" />
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="btnCustomers" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Customers">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                <Image url="@../images/HILMIONELL.png" />
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="btnMenus" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Menus">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                <Image url="@../images/icons8_Xbox_Menu_32px.png" />
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="btnSettings" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Settings">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                <Image url="@../images/icons8_Slider__32px.png" />
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="btnSignout" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Sign Out">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                <Image url="@../images/icons8_Sign_Out_32px.png" />
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+
+        </VBox>
+        <StackPane layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A;">
+
+                <Pane fx:id="pnlCustomer" prefHeight="200.0" prefWidth="200.0" />
+                <Pane fx:id="pnlOrders" prefHeight="200.0" prefWidth="200.0" />
+                <Pane fx:id="pnlMenus" prefHeight="200.0" prefWidth="200.0" />
+                <Pane fx:id="pnlOverview" prefHeight="576.0" prefWidth="753.0">
+
+                        <TextField layoutX="551.0" layoutY="49.0" prefHeight="27.0" prefWidth="183.0" promptText="search" style="-fx-background-color: #02030A; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" />
+                        <Label layoutX="14.0" layoutY="45.0" prefWidth="212.0" text="Gestion Immobilier" textFill="#e7e5e5">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" layoutX="133.0" layoutY="97.0" prefHeight="92.0" prefWidth="661.0" spacing="50.0">
+
+                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+
+                                        <Label text="2000" textFill="#2a73ff">
+                                            <font>
+                                                <Font name="System Bold" size="26.0" />
+                                            </font>
+                                        </Label>
+                                        <Label text="Total Orders" textFill="#e7e5e5" />
+
+                                </VBox>
+                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                        <Label text="1000" textFill="#26bfbc">
+                                            <font>
+                                                <Font name="System Bold" size="26.0" />
+                                            </font>
+                                        </Label>
+                                        <Label text="Total Check" textFill="#e7e5e5" />
+                                </VBox>
+                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                        <Label text="500" textFill="#fa5f7e">
+                                            <font>
+                                                <Font name="System Bold" size="26.0" />
+                                            </font>
+                                        </Label>
+                                        <Label text="Peding Orders" textFill="#e7e5e5" />
+                                </VBox>
+                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                        <Label text="500" textFill="#de0000">
+                                            <font>
+                                                <Font name="System Bold" size="26.0" />
+                                            </font>
+                                        </Label>
+                                        <Label text="Orders on Hold" textFill="#e7e5e5" />
+                                </VBox>
+
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="97.0" layoutY="178.0" prefHeight="42.0" prefWidth="712.0" spacing="80.0" style="-fx-background-color: #02030A;">
+                                <Label fx:id="colAdmin" textFill="#e7e5e5">
+                                    <HBox.margin>
+                                        <Insets left="50.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <Label fx:id="colUser" text="UserName" textFill="#e7e5e5">
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </Label>
+                                <Label fx:id="colST" text="SurfaceTotal" textFill="#e7e5e5">
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </Label>
+                                <Label fx:id="colPR" text="PrixRevient" textFill="#e7e5e5">
+                                    <HBox.margin>
+                                        <Insets left="-16.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <Label fx:id="colPV" text="PrixVente" textFill="#e7e5e5">
+                                    <HBox.margin>
+                                        <Insets left="-40.0" />
+                                    </HBox.margin>
+                                </Label>
+                        </HBox>
+                        <ScrollPane layoutX="97.0" layoutY="220.0" prefHeight="320.0" prefWidth="637.0" stylesheets="@style.css">
+                                <VBox fx:id="pnItems" prefHeight="318.0" prefWidth="628.0" spacing="5.0" style="-fx-background-color: #02030A;">
+                                    <padding>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </padding>
+                                </VBox>
+                        </ScrollPane>
+                        <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="741.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                                <Image url="@../images/icons8_Search_52px.png" />
+                        </ImageView>
+          <Button fx:id="btnDelete" layoutX="-58.0" layoutY="502.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Delete" textFill="#F90505"/>
+
+                </Pane>
+        </StackPane>
+    <Button fx:id="btnInsert" layoutX="-2.0" layoutY="502.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Insert" textFill="#2306F8"/>
+    <Button fx:id="btnUpdate" layoutX="99.0" layoutY="502.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Update" textFill="#088A08"/>
+    <effect>
+        <DropShadow color="#1b1eeb" />
+    </effect>
+</AnchorPane>
